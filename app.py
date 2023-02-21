@@ -26,7 +26,7 @@ verses = [
     "He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away. And He who was seated on the throne said, 'Behold, I am making all things new.'-Revelation 21:4"
 ]
 
-@app.route('/api/bible/random')
+@app.route('/')
 def random_verse():
     verse = random.choice(verses)
     return jsonify({'verse': verse})
